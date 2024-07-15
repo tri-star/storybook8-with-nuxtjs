@@ -1,0 +1,20 @@
+{
+    "name": "Nuxt.js + Storybookv8 Test",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:0-18",
+    "features": {
+      "ghcr.io/devcontainers-contrib/features/pnpm:2": {}
+    },
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "dbaeumer.vscode-eslint",
+          "vue.volar",
+          "vue.vscode-typescript-vue-plugin",
+          "storybook.storybook-vscode"
+        ]
+      }
+    },
+    "forwardPorts": [3000, 6006],
+    "postCreateCommand": "pnpm install && cd packages/app1 && pnpm dev",
+    "remoteUser": "node"
+  }
