@@ -15,6 +15,6 @@
       }
     },
     "forwardPorts": [3000, 6006],
-    "postCreateCommand": "pnpm install && cd packages/app1 && pnpm dev",
+    "postCreateCommand": "pnpm install",
     "remoteUser": "node"
   }
